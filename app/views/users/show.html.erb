@@ -2,9 +2,12 @@
   	<div class="col-lg-6 col-lg-offset-3 text-center">
   		<!-- Confirmation and Incentive Copy -->
   		 <p style="font-family: 'Architects Daughter', cursive;font-size:20px;margin-bottom:0px;" class="text-center">Boohyah! Thanks for signing up!</p>
-		<p>Help spread the word by sharing your unique URL below. Refer 3 friends and get your first month free! <% if @user.count %>So far your referral count is <%= @user.count %>.<% else %><% end %></p>
+		<p>Help spread the word by sharing your unique URL below. Refer 3 friends to get invited before anyone else AND get your first month free! <% if @user.count %>So far your referral count is <%= @user.count %>.<% else %><% end %></p>
 		<!-- End Confirmation and Incentive Copy -->
-
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-4 col-lg-offset-4 text-center">
 		<!-- Referral URL -->
 		<p><input type="email" class="form-control url" value="<%= "#{root_url}?code=#{@user.code}" %>"></p>
 		<!-- End Referral URL -->
