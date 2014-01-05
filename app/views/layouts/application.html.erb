@@ -27,13 +27,14 @@
   }
   .hero {
     background-color: #9e003a;
+    /* background-image:url('/assets/background-blur.png');
+    background-repeat:no-repeat;
+    background-size: 100%; */
   }
   .signup {
-    background-color: #9e003a;
     padding-top:10px;
     padding-bottom:20px;
     color: #fff;
-    text-shadow: 4px 3px 0 #9e003a,5px 4px 0 rgba(0,0,0,0.15);
   }
   .footer {
     font-size: 13px;
@@ -53,15 +54,16 @@
 
   <div class="hero" style="padding-top:20px;">
     <div class="row">
-      <div class="col-lg-6 col-lg-offset-3">
+      <div class="col-lg-10 col-lg-offset-1">
         <p class="logo text-center"><a href="/">Cranberry</a></p>
+          <div class="signup">
+            <%= yield %>
+          </div>
       </div>
     </div>
   </div>
 
-  <div class="signup">
-    <%= yield %>
-  </div>
+
 
   <div class="container">
   <div class="row" style="margin-bottom:60px;margin-top:40px;">
