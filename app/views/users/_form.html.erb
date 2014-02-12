@@ -2,7 +2,7 @@
 
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
-       <p style="font-family: 'Architects Daughter', cursive;font-size:20px;margin-top:20px;margin-bottom:0px;" class="text-center">Be awesome and sign up below to be notified when it launches</p>
+       <p style="font-size:20px;margin-top:10px;margin-bottom:0px;" class="text-center">Do you want more customers at a lower cost?</p>
     </div>
   </div>
   <!-- Sign Up Form -->
@@ -16,7 +16,7 @@
         <%= f.hidden_field :code %>
         <% if @user.errors.any? %><label class="control-label" for="inputError"><% @user.errors.full_messages.each do |msg| %><%= msg %><% end %></label><% end %>
         <span class="input-group-btn">
-          <%= f.submit "Notify me", :class => "btn btn-success signup-button" %>
+          <%= f.submit "Yes I do", :class => "btn btn-success signup-button" %>
         </span>
       </div>
     </div>

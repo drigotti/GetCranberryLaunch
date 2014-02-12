@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="//cdn.optimizely.com/js/539898302.js"></script>
   <!-- Meta Data can be added from config/application.yml -->
-  <title>Cranberry</title>
+  <title>Lead Nurturing Software</title>
   <meta name="description" content="In-product and on-site marketing campaign manager.">
-  <meta property="og:site_name" content="Cranberry"/>
+  <meta property="og:site_name" content="Lead Nurturing Software"/>
   <meta property="og:url" content="<%= root_url %>"/>
   <!-- End Meta Data -->
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="/assets/favicon.ico" >
   <style>
   .logo a {
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     text-decoration: none;
-    font-family: 'Quando', serif;
+    font-family: 'Capriola', sans-serif;
   }
   body {
     background-color: #ededed;
   }
   .hero {
-    background-color: #9e003a;
+    background-color: #388ce0;
     /* background-image:url('/assets/background-blur.png');
     background-repeat:no-repeat;
     background-size: 100%; */
@@ -42,10 +40,10 @@
     margin-bottom:15px;
   }
   .benefit {
-    font-family: 'Architects Daughter', cursive;
     font-size:23px;
     margin-bottom:5px;
-    color:#9e003a;
+    color:#388ce0;
+    font-weight: 500;
   }
   </style>
 </head>
@@ -55,7 +53,7 @@
   <div class="hero" style="padding-top:20px;">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
-        <p class="logo text-center"><a href="/">Cranberry</a></p>
+        <p class="logo text-center"><a href="/">LeadNurturing<span style="font-size:60%;">.co</span></a></p>
           <div class="signup">
             <%= yield %>
           </div>
@@ -66,69 +64,43 @@
 
 
   <div class="container">
-  <div class="row" style="margin-bottom:60px;margin-top:40px;">
-    <div class="col-lg-8 col-lg-offset-2 col-xs-9">
-        <p class="text">Cranberry enables marketers to easily create targeted on-site marketing campaigns and customer notifications. With a few simple lines of code on your site, you can manage, prioritize and curate banners targeting specific users based on the criteria you set. </p>
+  <div class="row" style="margin-bottom:40px;margin-top:40px;">
+    <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+        <p class="text">Just 21% of marketing leads convert into a sale and <strong>companies that excel at lead nurturing generate 50% more sales ready leads at 33% lower cost</strong>, yet 65% of B2B marketers have not established lead nurturing.</p>
     </div>
   </div>
 
   <div class="row" style="margin-bottom:40px;">
-    <div class="col-lg-2 col-lg-offset-2  col-xs-3 text-center">
-      <i class="fa fa-magic" style="font-size:100px;color:gray;"></i>
+    <div class="col-lg-4 col-xs-12 text-center">
+      <!-- <i class="fa fa-magic" style="font-size:100px;color:gray;"></i> -->
+      <%= image_tag "autoresponder.png", :class=>"img-circle", :style=>"border: 5px solid white;width:150px;margin-bottom:10px;opacity:.7;" %>
+        <p class="benefit">Automated Nurturing</p>
+        <p class="text">Set up an email workflow to automatically nurture leads with a drip email campaign for a higher sales conversion.</p> 
     </div>
-    <div class="col-lg-6 col-xs-9">
-        <p class="benefit">Smart Campaigns</p>
-        <p class="text">Cranberry allows you to only show relevant messaging, from potential or current customers, to mobile device or desktop, to domestic or international visitors, we provide specific targeting criteria, so you can show the most engaging messages and make the most of your pixels.</p> 
+    <div class="col-lg-4 col-xs-12 text-center">
+      <%= image_tag "statistics.png", :class=>"img-circle", :style=>"border: 5px solid white;width:150px;margin-bottom:10px;opacity:.7;" %>
+        <p class="benefit">Powerful Reporting</p>
+        <p class="text">See which emails are working to quickly and easily improve for nurturing funnel and get more leads sales ready.</p> 
+    </div>
+    <div class="col-lg-4 col-xs-12 text-center">
+      <%= image_tag "email.png", :class=>"img-circle", :style=>"border: 5px solid white;width:150px;margin-bottom:10px;opacity:.7;" %>
+        <p class="benefit">Engaging Emails</p>
+        <p class="text">Create emails that convert and are completely custom to your needs and company the WYSIWYG email editor.</p> 
     </div>
   </div>
 
-  <div class="row" style="margin-bottom:40px;">
-    <div class="col-lg-2 col-lg-offset-2  col-xs-3 text-center">
-      <i class="fa fa-bar-chart-o" style="font-size:120px;color:gray;"></i>
-    </div>
-    <div class="col-lg-6 col-xs-9">
-        <p class="benefit">Engagement Analytics</p>
-        <p class="text">Once you create a campaign, Cranberry makes it easy to measure success. We'll monitor views, clicks, and engagement for each campaign, so you can use this data to make decisions about what’s working.</p> 
-    </div>
-  </div>
 
   <div class="row">
     <div class="col-lg-12 text-center">
-      <p class="footer">hello@getcranberry.com</p>
+      <p class="footer">Source: MarketingSherpa<br/>hello@leadnurturing.co</p>
     </div>
   </div>
 
 </div>
 
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46733557-1', 'getcranberry.com');
-  ga('send', 'pageview');
-</script>
 
-<!-- Adroll -->
-<script type="text/javascript">
-adroll_adv_id = "S2W4RCA3S5CP3BFXGTAWA3";
-adroll_pix_id = "KWBIKFQXMVGJNN5NHVEWMW";
-(function () {
-var oldonload = window.onload;
-window.onload = function(){
-   __adroll_loaded=true;
-   var scr = document.createElement("script");
-   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-   scr.setAttribute('async', 'true');
-   scr.type = "text/javascript";
-   scr.src = host + "/j/roundtrip.js";
-   ((document.getElementsByTagName('head') || [null])[0] ||
-    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-   if(oldonload){oldonload()}};
-}());
-</script>
+
 
 
 </body>
